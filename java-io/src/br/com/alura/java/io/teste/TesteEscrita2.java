@@ -22,15 +22,16 @@ public class TesteEscrita2 {
 //		OutputStream fos = new FileOutputStream("lorem2.txt");
 //		Writer osw = new OutputStreamWriter(fos);
 //		BufferedWriter bw = new BufferedWriter(osw);
-			
-		FileWriter fw = new FileWriter("lorem2.txt");
-		BufferedWriter bw = new BufferedWriter(fw);
+//FileWriter fw = new FileWriter("lorem2.txt");
+		
+		BufferedWriter bw = new BufferedWriter(new FileWriter("java-io/lorem2.txt"));
 		bw.write("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod");
+		bw.newLine();
 		bw.newLine();
 		bw.newLine();
 		bw.write("Jean da Costa Abreu Teste e Tati Bonifacio Gomes Abreu");
 		
-		fw.close();
+		bw.close();
 	}
 
 }
